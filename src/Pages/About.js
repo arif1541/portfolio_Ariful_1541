@@ -108,7 +108,7 @@ export default function About() {
             </div>
             <a
               className="cv__section"
-              href="https://drive.google.com/file/d/1nzLXC3Z93XmYinDaRPhHU3QSz3beJgFI/view?usp=sharing"
+              href="https://drive.google.com/file/d/1gw3FohBghjKchI8SAkxA6LOJLLAPNCyG/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
