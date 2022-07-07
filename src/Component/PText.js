@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PStyle = styled.div`
-  max-width: 600px;
+  max-width: 550px;
   margin: 0 auto;
-  font-size: 2rem;
-  line-height: 1.3em;
+  font-size: 1.7rem;
+  line-height: 1.22em;
   .pText_color {
-    color: var(--white);
+    color: var(--deep-dark);
   }
   @media only screen and (max-width: 768px) {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 `;
 

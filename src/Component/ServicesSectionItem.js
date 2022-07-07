@@ -5,14 +5,17 @@ import PText from './PText';
 
 const ItemStyles = styled.div`
   text-align: center;
+  border: 6px solid var(--milk-white);
+  padding: 20px 20px;
   .servicesItem__icon {
     svg {
-      width: 3rem;
+      width: 3.5rem;
     }
   }
   .servicesItem__title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: 'Montserrat SemiBold';
+    color: var(--black);
   }
   .para {
     margin-top: 2rem;

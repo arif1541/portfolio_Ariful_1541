@@ -6,12 +6,14 @@ const ColStyle = styled.div`
   .heading {
     font-size: 2.4rem;
     margin-bottom: 2rem;
+    color: var(--milk-white);
   }
   li {
     margin-bottom: 1rem;
   }
   a {
     font-size: 1.8rem;
+    color: var(--white);
   }
 `;
 

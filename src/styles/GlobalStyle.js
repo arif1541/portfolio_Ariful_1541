@@ -8,9 +8,9 @@ const GlobalStyles = createGlobalStyle`
   }
   :root{
     --dark-bg: #262626;
-    --gray-1: #BCB4B4;
+    --gray-1: #60676B;
     --deep-dark: #1E1E1E;
-    --gray-2: #363636;
+    --gray-2: #969A9D;
     --white : white;
     --black: black;
     --cream-white: #FFFDD0;
@@ -39,6 +39,7 @@ const GlobalStyles = createGlobalStyle`
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
+
   }
 /* Smooth Scroll  */
   [data-scrollbar] {
@@ -46,7 +47,7 @@ const GlobalStyles = createGlobalStyle`
     overflow: hidden;
     background-color: var(--gray-1);
     .scroll-content {
-      background-color: var(--dark-bg);
+      background-color: var(--white);
     }
     .scrollbar-track.scrollbar-track-y {
       z-index: 101;

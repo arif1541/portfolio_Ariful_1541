@@ -4,30 +4,33 @@ import styled from 'styled-components';
 import projectImg from '../assets/images/projectImg.png';
 
 const ProjectItemStyles = styled.div`
+  margin-bottom: 12rem;
   .projectItem__img {
     width: 100%;
     height: 400px;
     overflow: hidden;
     border-radius: 12px;
     display: inline-block;
-    border: 3px solid var(--gray-2);
+    border: 3px solid var(--black);
     img {
       height: 100%;
     }
   }
   .projectItem__info {
     margin-top: 1rem;
-    background-color: var(--deep-dark);
+    background-color: var(--white);
+    border: 5px solid var(--milk-white);
     padding: 1rem;
-    border-radius: 12px;
   }
   .projectItem__Title {
+    color: var(--black);
     font-size: 2.2rem;
   }
   .projectItem__desc {
     font-size: 1.6rem;
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
+    color: var(--black);
   }
 
   @media only screen and (max-width: 768px) {
@@ -60,7 +63,7 @@ export default function ProjectItem({
           <h3 className="projectItem__Title">{title}</h3>
         </Link>
         <p className="projectItem__desc">{desc}</p>
-        {link && (
+        {/* {link && (
           <a
             className="project__button"
             href={link}
@@ -69,7 +72,7 @@ export default function ProjectItem({
           >
             Open Project
           </a>
-        )}
+        )} */}
       </div>
     </ProjectItemStyles>
   );

@@ -1,49 +1,44 @@
 import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../images/projectImg.png';
-import UTrackerImg from '../images/utracker.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
-import CoinTrackerImg from '../images/cointracker.jpg';
-import CavinImg from '../images/cavinimg.jpg';
+import TravelerCabin from '../images/TravelerCabin.jpg';
+import UrologyHospital from '../images/UrologyHospital.png';
+import UndergroundTrainStation from '../images/UndergroundTrainStation.jpg';
+import FiveStarHotel from '../images/FiveStarHotel.jpg';
+import ResidentialDuplex from '../images/ResidentialDuplex.jpg';
 
 const projects = [
   {
     id: uuidv4(),
-    name: 'U Tracker',
-    desc:
-      'An application to track your all data from one place. I developed the website and the mobile app',
-    img: UTrackerImg,
+    name: 'Urology Hospital Renovation',
+    desc: 'Location:2 No Gate, Chattogram Project Year: 2022',
+    img: UrologyHospital,
     link: '#',
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
-    desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
+    name: 'Underground Train Station Concept',
+    desc: 'Location: Kuwait Project Year:   2020',
+    img: UndergroundTrainStation,
     link: '#',
   },
   {
     id: uuidv4(),
-    name: 'Coin Tracker',
-    desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
+    name: '5 Star Hotel Design Proposal',
+    desc: 'Location: Khulshi, Chattogram Project Year:   2021',
+    img: FiveStarHotel,
     link: '#',
   },
   {
     id: uuidv4(),
-    name: "Cavin's Portfolio",
-    desc:
-      'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-    img: CavinImg,
+    name: 'Residential Duplex Design',
+    desc: 'Location: Shatkaniya, Chattogram Project Year:   2020',
+    img: ResidentialDuplex,
     link: '#',
   },
   {
     id: uuidv4(),
-    name: 'Tracking Soft',
-    desc:
-      'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-    img: ProjectImg,
+    name: 'Traveler Cabin Design',
+    desc: 'Location: Variant Places of Canada Project Year:   2019',
+    img: TravelerCabin,
     link: '#',
   },
 ];

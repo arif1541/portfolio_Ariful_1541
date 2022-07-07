@@ -3,7 +3,7 @@ import ProfileSection from '../Component/ProfileSection';
 import AboutSection from '../Component/AboutSection';
 import ServicesSection from '../Component/ServicesSection';
 import ProjectSection from '../Component/ProjectSection';
-import ContactBanner from '../Component/ContactBanner';
+// import ContactBanner from '../Component/ContactBanner';
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <AboutSection />
       <ServicesSection />
       <ProjectSection />
-      <ContactBanner />
+      {/* <ContactBanner /> */}
     </div>
   );
 }

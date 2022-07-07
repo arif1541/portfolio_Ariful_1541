@@ -5,20 +5,22 @@ const SectionTitleStyle = styled.div`
   text-align: center;
   p {
     font-family: 'RobotoMono Regular';
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: var(--black);
   }
   h2 {
     font-family: 'Montserrat Bold';
-    font-size: 6rem;
+    font-size: 7rem;
     margin-top: 0.5rem;
     text-transform: uppercase;
+    color: var(--black);
   }
   @media only screen and (max-width: 768px) {
     p {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
     h2 {
-      font-size: 3.8rem;
+      font-size: 3.6rem;
     }
   }
 `;

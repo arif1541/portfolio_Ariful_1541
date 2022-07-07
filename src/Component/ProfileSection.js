@@ -1,15 +1,15 @@
 import React from 'react';
 import styledComponents from 'styled-components';
-import profile from '../assets/images/profile.png';
-import Button from './Button';
-import PText from './PText';
-import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
-import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
+import renehome from '../assets/images/renehome.PNG';
+// import Button from './Button';
+// import PText from './PText';
+// import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
+// import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 
 const ProfileStyle = styledComponents.div`
   .profile{
     height: 100vh;
-    min-height: 1000px;
+    min-height: 1150px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -18,29 +18,39 @@ const ProfileStyle = styledComponents.div`
     position: relative;
   }
   .profile__heading {
-    font-size: 2rem;
-    margin-bottom: -4rem;
+    font-size: 2.5rem;
+    margin-bottom: .1rem;
     position: relative;
+    
     span{
       display: inline-block;
       width: 100%;
+      color: var(--black);
     }
     .profile__name{
       font-size: 7rem;
       font-family: "Montserrat SemiBold";
-      color: var(--white);
+      color: var(--dark-bg);
     }
   }
   .profile__img{
     max-weidth: 900px;
     width: 100%;
-    height: 550px;
+    height: 650px;
     margin: 0 auto;
-    border: 2px solid var(--gray-1);
+    border: 5px solid var(--milk-white);
+    overflow: clip;
+    border-radius: 12px;
+    display: inline-block;
     
   }
+  .text__bellow__profile{
+    max-width: 1200px;
+    font-size: 2.4rem;
+    color: var(--black);
+  }
   .profile__info{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     .pText_color {
       color: var(--white);
     }
@@ -98,12 +108,13 @@ const ProfileStyle = styledComponents.div`
     }
   }
   @media only screen and (max-width: 768px) {
+    margin-top: -2rem;
     .profile{
       min-height: 750px;
     }
     .profile__heading{
       font-size: 1.4rem;
-      margin-bottom: -3rem;
+      margin-bottom: 2rem;
       .profile__name{
         font-size: 4.5rem;
       }
@@ -112,7 +123,12 @@ const ProfileStyle = styledComponents.div`
       height: 300px;
     }
     .profile__info{
-      margin-top: 3rem;
+      margin-top: 2rem;
+    }
+    .text__bellow__profile{
+      // max-width: 1000px;
+      font-size: 1.2rem;
+      color: var(--black);
     }
     .profile__social{
       left: 0px;
@@ -156,20 +172,21 @@ export default function ProfileSection() {
         <div className="container">
           <h1 className="profile__heading">
             <span>Hello, This is </span>
-            <span className="profile__name">Ariful Islam</span>
+            <span className="profile__name">RENE ARCHITECTS</span>
           </h1>
           <div className="profile__img">
-            <img src={profile} alt="" />
+            <img src={renehome} alt="" />
           </div>
           <div className="profile__info">
-            <PText>
-              I am working as a React front-end designer and developer. I am
-              currently studying in CUET. And I also love photography and
-              learning new things.
-            </PText>
-            <Button btnLink="/projects" btnText="see my works" />
+            <p className="text__bellow__profile">
+              Rene Architects is Bangladesh's all-encompassing Architecture,
+              Interior design, Engineering, and Urban planning firm. We are an
+              inquisitive bunch of young professionals dedicated to making our
+              mark in Architecture in Bangladesh.
+            </p>
+            {/* <Button btnLink="/projects" btnText="see my works" /> */}
           </div>
-          <div className="profile__social">
+          {/* <div className="profile__social">
             <div className="profile__social__indicator">
               <p>Follow</p>
               <img src={SocialMediaArrow} alt="social media arrow" />
@@ -218,7 +235,7 @@ export default function ProfileSection() {
           <div className="profile__scrollDown">
             <p>Scroll</p>
             <img src={ScrollDownArrow} alt="scroll down arrow" />
-          </div>
+          </div> */}
         </div>
       </div>
     </ProfileStyle>

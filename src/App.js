@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Footer from './Component/Footer';
 import NavMenu from './Component/NavMenu';
 import SmoothScrollbar from './Component/SmoothScrollbar';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
+// import About from './Pages/About';
+// import Contact from './Pages/Contact';
 import Home from './Pages/Home';
-import Project from './Pages/Project';
+// import Project from './Pages/Project';
 
 export default function App() {
   return (
@@ -15,7 +15,7 @@ export default function App() {
         <NavMenu />
         <SmoothScrollbar>
           <Switch>
-            <Route path="/about">
+            {/* <Route path="/about">
               <About />
             </Route>
             <Route path="/projects">
@@ -23,7 +23,7 @@ export default function App() {
             </Route>
             <Route path="/contact">
               <Contact />
-            </Route>
+            </Route> */}
             <Route path="/">
               <Home />
             </Route>
